@@ -23,12 +23,6 @@ int note[] = { NOTE_A4, NOTE_AS4, NOTE_B4, NOTE_C5 };
 int duration[] = { 200, 200, 200, 800 };
 int gameovertune[] = { NOTE_C4, NOTE_C4, NOTE_B3, NOTE_AS3, NOTE_A3, NOTE_G3 };
 int duration3[] = { 150, 150, 300, 300, 300, 1200 };
-int button[] = { 2, 3, 4, 5 };    //The four button input pins
-int ledpin[] = { 8, 9, 10, 11 };  // LED pins
-int turn = 0;                     // turn counter
-int buttonstate = 0;              // button state checker
-int colorArray[MAX_LEVEL];        //Intentionally long to store up to 100 inputs (doubtful anyone will get this far)
-int inputArray[MAX_LEVEL];
 
 int sequence[MAX_LEVEL];
 int sound[MAX_LEVEL];
