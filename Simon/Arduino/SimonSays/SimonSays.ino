@@ -33,21 +33,11 @@ int velocity = 1000;
 
 int tens = 0;
 int ones = 0;
-int hitens;
-int hiones;
-int highscoredelay = 30;
-bool highScoreShow = false;
 bool fail1 = false;
-int addr1 = 0;
-int addr2 = 1;
-int addrspeed = 2;
 bool restart = false;
 bool startupTone = true;
-//int pace = EEPROM.read(addrspeed);
-int pace = 4;
+
 void setup() {
-  //hiones = EEPROM.read(0);
-  //EEPROM.write(0,0);
   setupFsr();
   fsrRead3();
   // This is for Trinket 5V 16MHz, you can remove these three lines if you are not using a Trinket
