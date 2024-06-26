@@ -1,0 +1,96 @@
+Revisions history
+-----------------
+
+    * 2023-08-19: Ver 0.9.9 - Luca - Branch: "lab" ---> "master"
+      - Implements Network (Relay Race) functionality:
+        - Works as usual in Standalone mode
+        - Works with NetworkClient [0.9.8] (Relay Race)
+      - Demo mode now force a temporary [Autostart] mode when active
+      - Added [olr-settings.h] file containing Compile-time settings
+        - PIN_LED, PIN_AUDIO, etc
+
+    * 2023-07-20: Ver 0.9.8 - Luca - Branch: "lab"
+      - Added "Demo" mode:
+        - When Board has [demo_mode=ON] in the EEPROM configuration,
+          it plays a "Simulated" race where cars run without any real player. 
+          Useful to test the code and to get people attention in Fairs, etc
+          On user activity (somebody uses the controllers) the boards jumps 
+          back automatically to demo=off mode (Users play races via Controllers)
+      - Start implementing Relay Race funcionality 
+
+    * 2023-07-10: Ver 0.9.7 - Lab ---> Master
+      - Branch Lab merged to Master 
+
+    * 2021-11-20: Ver 0.9.7 - Luca - Branch: "lab"  
+      - Changed Version Number to 0.9.7 
+	  	- ready to merge with master branch
+		- ver 0.9.7 managed by companion desktopApp
+
+    * 2021-07-20: Ver 0.9.6 - Luca - Branch: "lab"  
+      - Manage config parameters (load/save/protocol) for:
+         - NEW: Autostart ("G")
+         - NEW: Battery ("E")
+         - NEW: Players number ("P")
+         - UPD: "Q" ("Get configuration" output changed) 
+		 		-- Not compatible with previous versions
+         - UPD: "~" ---> "*" (Commmand ID for "Leave configuration mode" changed)
+
+    * 2021-07-13: Ver 0.9.6 - Gerardo - Branch: "lab" 
+      - Charge  battery function and telemetry test code (add BATTERY ( ",<0-100 value>  to end of "p" serial status ))
+      - Add BATTERY_DELTA variable for decremet battery on push buton flag change
+      - Add BATTERY_MIN  for user warning on low battery status
+      - Add blink efect on min battery condition 
+      - Quit tail lap efect
+      - Add coin to main track for BATTERY_MODE=1
+
+     * 2020-12-17: Ver 0.9.6- Luca // Gitlab Commit = 0.9.6a
+       - Removed dependency from "AsyncSerialLib"
+         - new class SerialCommand()
+       - Remove delay() (blocking) in Countdown phase 
+         - new class SoftTimer()
+       - adapted to Serial Protocol 1.0
+         - added serial command "@" - Enter Configuration Mode 
+           (still respond to deprecated R0,R1 to enter cfg mode)
+         - added serial command "K" - Set Physics parameters (weight, friction)
+         - added serial command "W" - Write parameter set to EEPROM
+         - updated command "B" (Pitlane cfg) to manage PERM parameter
+         - updated command "A" (Slope cfg) to manage PERM parameter
+
+    * 2020-08-26: Ver 0.9.5 - Luca 
+       - Version number format changed (3 dot-separated integers) !!! 
+       - added serial command Get Software ID
+       - added serial command Get Software Version
+
+    * 2020-07-28: Ver 0.9.d - Luca 
+       - Tested OK on Arduino Every
+       - Configuration Values NOW SAVED in EEPROM to enable 
+         OLR Configuration via a Software client running on a computer.
+         - Laps (Single Race duration)
+         - Led Number in the Racetrack (MAXLED)
+         - Box Length 
+         - Ramp: init,center,end,high
+         The User Interface running on the Computer is currently under development.
+         Advanced users can already change Cfg Values via Serial (See Protocol documentation)
+         Function Activation:
+            Even if you can configure Box and Slope parameters, the activation is 
+            still managed by user via Controls
+
+       - Winner Visual effect changed (too long for 1200 MAXLED)
+
+
+    * 2020-07-16: Ver 0.9.c - Luca
+       - Changes in [I/O Pin]<>[Car Color] association to match
+         the desired Phisical Buttons Layout (Quick Start Guide)
+       - Box/Pitlane
+         - Entry/exit point marked to help put in place led strip (circuit shape)
+         - Coin "Boost" scaled up to make "catch it" worth (almost always win the race)
+       - Minor bugfix:
+         - box_init(), box_isactive() use wrong var "rampactive"
+ 
+    * 2020-07-16: Ver 0.9.b - Gerardo
+       - Sound FX added  
+
+    * 2019-10-10 - Ver 0.9.a
+       -First public Version by Angel Maldonado (Maker Faire Roma 2019)
+
+ 
