@@ -5,7 +5,7 @@
 
 ‘4 Gewinnt’ ist ein Spiel für 2 Spieler (ROT und BLAU), die abwechselnd Spielsteine in eine von 8 Reihen fallen lassen. Wer als erster 4 Steine seiner Farbe waagerecht, senkrecht oder diagonal angeordnet hat, hat das Spiel gewonnen.
 
-
+![](doc/4gewinnt.jpeg)
 
 ## Spielablauf
 

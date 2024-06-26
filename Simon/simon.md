@@ -5,6 +5,8 @@
 
 Simon, das Kultspiel aus den 70ern ist zurück. Wiederhole die Ton- und Lichtfolge die der Computer vorgibt. Die Folge wird mit der Zeit immer länger und die Zeit, mit der die Töne abgespielt werden, immer kürzer. Schaffst du es bis Level 99?
 
+![](doc/simon.jpeg)
+
 
 
 ## Spielablauf
