@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "rur")(type "KiCad")(uri "/home/peter/Downloads/rur.kicad_sym")(options "")(descr ""))
+)
