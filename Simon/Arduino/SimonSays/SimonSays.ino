@@ -12,7 +12,6 @@ All these features are coded by Mick Gerritsen
 #include "pitches.h"
 #include "neopixelRing.h"
 #include "fsr.h"
-#include <EEPROM.h>
 
 #define MAX_LEVEL 100
 

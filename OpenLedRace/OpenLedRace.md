@@ -29,6 +29,8 @@ Wenn die GRÜNE LED erlischt, ist das Rennen freigegeben und es heißt Gas geben
 * 1 x Kondensator 1µF
 * 5-7V Netzteil mit 2.1mm Hohlstecker
 * 1 x Powerschalter
+* 2 x 2m Kopfhörerkabel stereo
+* 2 x Kopfhörer Splitter Kabel
 * 1 x 2.1mm Power Buchse
 * 1 x Lochraster Platine 5x7cm, 
 * isolierter Draht
